@@ -1,0 +1,9 @@
+#cardpy{
+    box-shadow: -6px 15px 15px 12px;
+}
+@media  screen and (max-width:350px) {
+    #cardpy{
+        width:10px;
+        height: fit-content;
+    }
+}

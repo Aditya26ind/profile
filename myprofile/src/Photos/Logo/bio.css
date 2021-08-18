@@ -1,0 +1,16 @@
+#bio{
+ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 70%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 3%;
+    text-decoration:transparent ;
+}
+
+@media screen and (max-width:420px){
+    #bio{
+        margin-top: 400px;
+    }
+    
+}
