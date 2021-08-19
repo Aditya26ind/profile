@@ -11,10 +11,10 @@ pylint = "*"
 pylint-django = "*"
 pillow = "*"
 gunicorn = "*"
-django-heroku = "*"
 whitenoise = "*"
-psycopg2 = "*"
 psycopg2-binary = "*"
+psycopg2 = "*"
+django-heroku = "*"
 
 [dev-packages]
 
