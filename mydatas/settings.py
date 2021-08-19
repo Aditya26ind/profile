@@ -29,7 +29,7 @@ SECRET_KEY = 'a!m8d(z$7ao)^03j201a=01y$!g6%^ppcjctm47lp2mz4-v#i#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["127.0.0.1","localhost","profilecvmy.herokuapp.com"]
 
 
 # Application definition
