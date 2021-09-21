@@ -29,7 +29,7 @@ SECRET_KEY = 'a!m8d(z$7ao)^03j201a=01y$!g6%^ppcjctm47lp2mz4-v#i#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1","localhost","profilecvmy.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1","localhost","profilecvmy.herokuapp.com","127.0.0.1:8000"]
 
 
 # Application definition
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'api.pydatas',
     'api.certificates',
     'api.webdatas',
+    'storages',
 
 
 ]
@@ -140,8 +141,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL="/media/"
-MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+# MEDIA_URL="/media/"
+# MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
@@ -164,3 +165,13 @@ STATICFILES_DIRS=[
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 django_heroku.settings(locals())
+AWS_STORAGE_BUCKET_NAME = 'aditya1stbucket'
+AWS_SECRET_ACCESS_KEY = 'uFnfCf4qIet/yZUxWh7LmCmc6BxlPH/ye5+Z7RCx'
+AWS_ACCESS_KEY_ID ='AKIARAQWT3KUIOLOA57O'
+AWS_S3_CUSTOM_DOMAIN ='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'static'
+MEDIAFILES_LOCATION='media'
+DEFAULT_FILE_STORAGE = 'Management.storage_backends.MediaStorage' 
