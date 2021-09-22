@@ -1,5 +1,6 @@
 #card{
     box-shadow: -3px 5px 15px 2px;
+    margin-left: -3px;
 }
 @media screen and (max-width:350px){
     #card{

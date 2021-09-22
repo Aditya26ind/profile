@@ -11,19 +11,19 @@ width: 30px;
 }
 @media  screen and (max-width:900px){
     .tags {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 }
 @media screen and (max-width:412px){
     .tags{
-        margin-top: 190px;
+        margin-top: 210px;
 
     }
     
 }
 @media screen and (max-width:360px){
     .tags{
-        margin-top: 140px;
+        margin-top: 160px;
 
     }
     
