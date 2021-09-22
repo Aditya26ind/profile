@@ -3,7 +3,8 @@
 width: 30px;
 }
 .tags a{
-    padding: 20px;
+    padding: 30px;
+    padding-top:20px ;
 }
 .tags{
     margin-top:2vh;
