@@ -1,6 +1,13 @@
 #card{
     box-shadow: -3px 5px 15px 2px;
-    margin-left: -3px;
+    margin-bottom: 7px;
+}
+@media screen and (max-width:380px){
+    #card{
+        width:100px;
+        height:60px;
+        left:-20px;
+    }
 }
 @media screen and (max-width:350px){
     #card{
